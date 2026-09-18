@@ -1,5 +1,129 @@
 [
   {
+    "id": "video-1789749663958",
+    "platform": "YouTube",
+    "videoType": "成員生日",
+    "title": "💛Happy DAEL Day : Playlist Party🎶💛",
+    "translations": {
+      "zh-TW": {
+        "title": "💛Happy DAEL Day : Playlist Party🎶💛"
+      },
+      "en": {
+        "title": ""
+      },
+      "ja": {
+        "title": ""
+      },
+      "ko": {
+        "title": ""
+      }
+    },
+    "members": [
+      "DOVIN",
+      "DAEL",
+      "THEO",
+      "FINN"
+    ],
+    "liveDate": "2026-05-26",
+    "postDate": "2026-09-19",
+    "officialUrl": "https://www.youtube.com/live/dC1z6HbwjFY?si=1gov73qepspKZPZr",
+    "youtubeId": "dC1z6HbwjFY",
+    "cues": []
+  },
+  {
+    "id": "video-1789749630640",
+    "platform": "YouTube",
+    "videoType": "成員生日",
+    "title": "당신은 사랑받기 위해 태어난 재온💙 Jaon’s Birthday Live 🎂🥳",
+    "translations": {
+      "zh-TW": {
+        "title": "당신은 사랑받기 위해 태어난 재온💙 Jaon’s Birthday Live 🎂🥳"
+      },
+      "en": {
+        "title": ""
+      },
+      "ja": {
+        "title": ""
+      },
+      "ko": {
+        "title": ""
+      }
+    },
+    "members": [
+      "DOVIN",
+      "THEO",
+      "JAON",
+      "ILANG"
+    ],
+    "liveDate": "2026-01-27",
+    "postDate": "2026-09-19",
+    "officialUrl": "https://www.youtube.com/live/3NPixIUQAz0?si=U32TbjX9t9nTictu",
+    "youtubeId": "3NPixIUQAz0",
+    "cues": []
+  },
+  {
+    "id": "video-1789749623605",
+    "platform": "YouTube",
+    "videoType": "成員生日",
+    "title": "태오 테토남 되기 정권 찌르기 1일차🥊 𝑺𝒑𝒆𝒄𝒊𝒂𝒍 𝑩𝒊𝒓𝒕𝒉𝒅𝒂𝒚 𝑳𝑰𝑽𝑬✨",
+    "translations": {
+      "zh-TW": {
+        "title": "태오 테토남 되기 정권 찌르기 1일차🥊 𝑺𝒑𝒆𝒄𝒊𝒂𝒍 𝑩𝒊𝒓𝒕𝒉𝒅𝒂𝒚 𝑳𝑰𝑽𝑬✨"
+      },
+      "en": {
+        "title": ""
+      },
+      "ja": {
+        "title": ""
+      },
+      "ko": {
+        "title": ""
+      }
+    },
+    "members": [
+      "THEO",
+      "JAON",
+      "ILANG",
+      "YULL"
+    ],
+    "liveDate": "2026-07-30",
+    "postDate": "2026-09-19",
+    "officialUrl": "https://www.youtube.com/live/EncXzxIzs0I?si=7SGgb1Op0kwTmbMD",
+    "youtubeId": "EncXzxIzs0I",
+    "cues": []
+  },
+  {
+    "id": "video-1789749574086",
+    "platform": "YouTube",
+    "videoType": "",
+    "title": "당신은 사랑받기 위해 태어난 재온💙 Jaon’s Birthday Live 🎂🥳",
+    "translations": {
+      "zh-TW": {
+        "title": "당신은 사랑받기 위해 태어난 재온💙 Jaon’s Birthday Live 🎂🥳"
+      },
+      "en": {
+        "title": ""
+      },
+      "ja": {
+        "title": ""
+      },
+      "ko": {
+        "title": ""
+      }
+    },
+    "members": [
+      "DOVIN",
+      "THEO",
+      "JAON",
+      "ILANG"
+    ],
+    "liveDate": "2026-01-27",
+    "postDate": "2026-09-19",
+    "officialUrl": "https://www.youtube.com/live/3NPixIUQAz0?si=U32TbjX9t9nTictu",
+    "youtubeId": "3NPixIUQAz0",
+    "cues": []
+  },
+  {
     "id": "video-1789749365357-0",
     "platform": "YouTube",
     "videoType": "",
