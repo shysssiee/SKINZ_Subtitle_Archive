@@ -4,7 +4,6 @@ import path from 'node:path';
 const root=process.cwd();
 const source=root;
 const output=path.join(root,'_site');
-const siteUrl='https://shysssiee.github.io/SKINZ_Subtitle_Archive';
 await rm(output,{recursive:true,force:true});
 await mkdir(output,{recursive:true});
 for(const name of ['index.html','assets']){
@@ -15,12 +14,22 @@ for(const name of ['index.html','assets']){
 await rm(path.join(output,'assets','fonts'),{recursive:true,force:true});
 const template=await readFile(path.join(source,'index.html'),'utf8');
 const videos=JSON.parse(await readFile(path.join(source,'data/videos.json'),'utf8'));
+let siteConfig={};
+try{siteConfig=JSON.parse(await readFile(path.join(source,'data/site-config.json'),'utf8'))}catch{}
+const siteUrl=String(siteConfig.siteUrl||'https://shysssiee.github.io/SKINZ_Subtitle_Archive').replace(/\/$/,'');
+const archiveName=siteConfig.archiveName||'SKINZ Subtitle Archive';
 const dataOutput=path.join(output,'data');
 const videoDataOutput=path.join(dataOutput,'videos');
 await mkdir(videoDataOutput,{recursive:true});
+await writeFile(path.join(dataOutput,'site-config.json'),JSON.stringify(siteConfig));
+const rootHtml=template
+  .replace('<title>SKINZ Subtitle Archive</title>',`<title>${escapeHtml(archiveName)}</title>`)
+  .replace('content="SKINZ Subtitle Archive">',`content="${escapeHtml(archiveName)}">`);
+await writeFile(path.join(output,'index.html'),rootHtml);
 const indexData=videos.map(video=>({
   id:video.id,
   platform:video.platform,
+  videoType:video.videoType||'',
   title:video.title,
   translations:Object.fromEntries(Object.entries(video.translations||{}).map(([lang,value])=>[lang,{title:value?.title||''}])),
   members:video.members||[],
@@ -38,7 +47,7 @@ for(const video of videos){
   await mkdir(folder,{recursive:true});
   const pageUrl=`${siteUrl}/video/${encodeURIComponent(video.id)}/`;
   const image=video.thumbnailUrl||(video.youtubeId?`https://i.ytimg.com/vi/${video.youtubeId}/hqdefault.jpg`:`${siteUrl}/assets/bstage-placeholder.svg`);
-  const title=`${video.translations?.['zh-TW']?.title||video.title}｜SKINZ Subtitle Archive`;
+  const title=`${video.translations?.['zh-TW']?.title||video.title}｜${archiveName}`;
   let html=template
     .replace('<head>','<head>\n  <base href="../../">')
     .replace('<body data-video-id="">',`<body data-video-id="${escapeHtml(video.id)}">`)

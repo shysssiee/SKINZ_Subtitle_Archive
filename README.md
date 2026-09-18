@@ -1,4 +1,4 @@
-# SKINZ Subtitle Archive — GitHub Pages 2.2.2
+# Subtitle Archive Template — GitHub Pages 2.3
 
 這份資料夾只包含公開網站。沒有登入、訪客統計或新增影片頁面。
 
@@ -17,13 +17,16 @@
 
 ## 新增及管理影片
 
-請使用另一個壓縮檔「SKINZ_Local_Video_Admin_v2.2」。它只留在自己的電腦，不要上傳 GitHub。
+請使用另一個壓縮檔「SKINZ_Local_Video_Admin_v2.3」。它只留在自己的電腦，不要上傳 GitHub。
 
 1. 雙擊管理工具的 `index.html`。
 2. 匯入本網站 `data/videos.json`。
-3. 新增、編輯或刪除影片。
+3. 新增、編輯、批量新增或使用時間軸編輯字幕。
 4. 匯出新的 `videos.json`。
-5. 替換 GitHub 上的 `data/videos.json` 並 Commit。
+5. 團體、成員、顏色或圖片有變更時，另外匯出 `site-config.json`。
+6. 替換 GitHub 上 `data` 資料夾中的同名檔案並 Commit。
+
+網站名稱、成員、來源平台、影片類型、說話者顏色與首頁圖片都由 `data/site-config.json` 控制，因此同一套程式可以套用到其他團體。
 
 ## 問題回報表單
 
