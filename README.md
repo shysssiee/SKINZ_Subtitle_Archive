@@ -1,4 +1,4 @@
-# SKINZ Subtitle Archive — GitHub Pages 2.2
+# SKINZ Subtitle Archive — GitHub Pages 2.2.2
 
 這份資料夾只包含公開網站。沒有登入、訪客統計或新增影片頁面。
 
@@ -12,6 +12,8 @@
 每次替換 `data/videos.json` 並 Commit，GitHub Actions 都會自動建立首頁與每部影片的獨立網址：
 
 `https://shysssiee.github.io/SKINZ_Subtitle_Archive/video/影片ID/`
+
+建置時也會自動產生輕量的 `data/videos-index.json`，首頁不必下載完整字幕；每部影片的字幕只會在進入該影片頁後載入。請勿手動修改這些自動產生的檔案。
 
 ## 新增及管理影片
 

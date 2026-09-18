@@ -7,12 +7,33 @@ const output=path.join(root,'_site');
 const siteUrl='https://shysssiee.github.io/SKINZ_Subtitle_Archive';
 await rm(output,{recursive:true,force:true});
 await mkdir(output,{recursive:true});
-for(const name of ['index.html','assets','data']){
+for(const name of ['index.html','assets']){
   await cp(path.join(source,name),path.join(output,name),{recursive:true});
 }
+// The former local rounded-font files total about 19 MB and are no longer used.
+// Keep them out of the deployed artifact even if an older repository still has them.
+await rm(path.join(output,'assets','fonts'),{recursive:true,force:true});
 const template=await readFile(path.join(source,'index.html'),'utf8');
 const videos=JSON.parse(await readFile(path.join(source,'data/videos.json'),'utf8'));
+const dataOutput=path.join(output,'data');
+const videoDataOutput=path.join(dataOutput,'videos');
+await mkdir(videoDataOutput,{recursive:true});
+const indexData=videos.map(video=>({
+  id:video.id,
+  platform:video.platform,
+  title:video.title,
+  translations:Object.fromEntries(Object.entries(video.translations||{}).map(([lang,value])=>[lang,{title:value?.title||''}])),
+  members:video.members||[],
+  liveDate:video.liveDate||video.date||'',
+  postDate:video.postDate||video.date||'',
+  officialUrl:video.officialUrl||'',
+  youtubeId:video.youtubeId||'',
+  thumbnailUrl:video.thumbnailUrl||'',
+  languages:['ko','zh','en','ja'].filter(lang=>(video.cues||[]).some(cue=>cue[lang]))
+}));
+await writeFile(path.join(dataOutput,'videos-index.json'),JSON.stringify(indexData));
 for(const video of videos){
+  await writeFile(path.join(videoDataOutput,`${encodeURIComponent(video.id)}.json`),JSON.stringify(video));
   const folder=path.join(output,'video',encodeURIComponent(video.id));
   await mkdir(folder,{recursive:true});
   const pageUrl=`${siteUrl}/video/${encodeURIComponent(video.id)}/`;

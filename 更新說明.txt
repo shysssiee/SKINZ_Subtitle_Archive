@@ -1,0 +1,19 @@
+SKINZ Subtitle Archive 2.2.2 更新方式
+
+1. 解壓縮本檔案。
+2. 將 index.html、assets 資料夾、scripts 資料夾與 README.md 上傳到 GitHub repository 根目錄。
+3. GitHub 詢問是否取代同名檔案時，請確認取代。
+4. 不要刪除或取代你原本的 data/videos.json；這個更新包刻意沒有附帶該檔案。
+5. 等 Actions 裡的 Deploy SKINZ Subtitle Archive 顯示綠色完成，再等約 1～3 分鐘後重新整理網站。
+
+本次修正
+- 套用新版首頁大圖。
+- 雙語字幕改為置中，韓文與翻譯仍分成上下兩區。
+- 移除完整字幕區塊，重點整理移到右側資訊欄。
+- 七位成員同時出現時顯示「全體成員」。
+- 修正 YouTube 播放器被「前往官方頁面觀看」提示遮住的問題。
+- YouTube API 改為進入影片頁才載入。
+- 首頁改用輕量影片索引，完整字幕只在進入影片頁時載入。
+- 停用原本約 19 MB 的本機字型下載，改用網頁圓體字型。
+
+重要：scripts/build.mjs 也必須一起上傳，否則不會產生新的影片索引及單片字幕資料。
