@@ -5,75 +5,18 @@
   "siteUrl": "https://shysssiee.github.io/SKINZ_Subtitle_Archive",
   "intro": "非官方・非營利的 SKINZ 多語字幕整理",
   "reportFormUrl": "",
-  "platforms": [
-    "YouTube",
-    "b.stage POP"
-  ],
-  "videoTypes": [
-    "SKINZ ZONE",
-    "成員生日",
-    "個人直播",
-    "幕後花絮"
-  ],
+  "platforms": ["YouTube", "b.stage POP"],
+  "videoTypes": ["SKINZ ZONE", "成員生日", "個人直播", "幕後花絮"],
   "disclaimer": "本頁字幕主要依據 YouTube 自動轉錄稿整理，並經 GPT 協助翻譯與校對，仍可能包含語音辨識、語意或人名判讀上的誤差，並非百分之百正確。所有內容僅供學習與參考；若發現錯誤，歡迎透過「問題回報」通知作者協助修正。",
   "heroImage": "assets/hero.webp",
   "backgroundImage": "",
   "members": [
-    {
-      "id": "DOVIN",
-      "name": "DOVIN",
-      "originalName": "도빈",
-      "color": "#4C4A4D",
-      "textColor": "#FFFFFF",
-      "avatar": "assets/members/dovin.png"
-    },
-    {
-      "id": "DAEL",
-      "name": "DAEL",
-      "originalName": "다엘",
-      "color": "#C4AD68",
-      "textColor": "#332C18",
-      "avatar": "assets/members/dael.jpg"
-    },
-    {
-      "id": "THEO",
-      "name": "THEO",
-      "originalName": "태오",
-      "color": "#927568",
-      "textColor": "#FFFFFF",
-      "avatar": "assets/members/theo.png"
-    },
-    {
-      "id": "FINN",
-      "name": "FINN",
-      "originalName": "핀",
-      "color": "#B8757A",
-      "textColor": "#FFFFFF",
-      "avatar": "assets/members/finn.png"
-    },
-    {
-      "id": "JAON",
-      "name": "JAON",
-      "originalName": "재온",
-      "color": "#7188A3",
-      "textColor": "#FFFFFF",
-      "avatar": "assets/members/jaon.jpg"
-    },
-    {
-      "id": "ILANG",
-      "name": "ILANG",
-      "originalName": "이랑",
-      "color": "#71767B",
-      "textColor": "#FFFFFF",
-      "avatar": "assets/members/ilang.jpg"
-    },
-    {
-      "id": "YULL",
-      "name": "YULL",
-      "originalName": "율",
-      "color": "#C18A68",
-      "textColor": "#33241C",
-      "avatar": "assets/members/yull.jpg"
-    }
+    {"id":"DOVIN","name":"DOVIN","originalName":"도빈","color":"#4C4A4D","textColor":"#FFFFFF","avatar":"assets/members/dovin.png"},
+    {"id":"DAEL","name":"DAEL","originalName":"다엘","color":"#C4AD68","textColor":"#332C18","avatar":"assets/members/dael.jpg"},
+    {"id":"THEO","name":"THEO","originalName":"태오","color":"#927568","textColor":"#FFFFFF","avatar":"assets/members/theo.png"},
+    {"id":"FINN","name":"FINN","originalName":"핀","color":"#B8757A","textColor":"#FFFFFF","avatar":"assets/members/finn.png"},
+    {"id":"JAON","name":"JAON","originalName":"재온","color":"#7188A3","textColor":"#FFFFFF","avatar":"assets/members/jaon.jpg"},
+    {"id":"ILANG","name":"ILANG","originalName":"이랑","color":"#71767B","textColor":"#FFFFFF","avatar":"assets/members/ilang.jpg"},
+    {"id":"YULL","name":"YULL","originalName":"율","color":"#C18A68","textColor":"#33241C","avatar":"assets/members/yull.jpg"}
   ]
 }
