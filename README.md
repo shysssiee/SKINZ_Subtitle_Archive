@@ -1,4 +1,4 @@
-# Subtitle Archive Template — GitHub Pages 2.3
+# Subtitle Archive Template — GitHub Pages 2.3.1
 
 這份資料夾只包含公開網站。沒有登入、訪客統計或新增影片頁面。
 

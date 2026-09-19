@@ -1,24 +1,17 @@
-Subtitle Archive 公開網站 v2.3 更新方式
+Subtitle Archive 公開網站 v2.3.1 更新方式
 
 1. 解壓縮更新包。
-2. 將裡面的 index.html、assets、scripts、data 與 README.md 上傳到 GitHub repository 根目錄。
+2. 將 index.html、assets、scripts、data 與 README.md 上傳到 GitHub repository 根目錄。
 3. 同名檔案請選擇取代。
-4. 本更新包沒有包含 videos.json，請保留 GitHub 上原本的 data/videos.json。
-5. 等 GitHub Actions 的 Deploy SKINZ Subtitle Archive 顯示綠色完成，再等約 1～3 分鐘後強制重新整理網站。
+4. 本更新包沒有 videos.json，請保留 GitHub 上原本的 data/videos.json。
+5. 等 GitHub Actions 顯示綠色完成，再等約 1～3 分鐘後強制重新整理網站。
 
-本次更新
-- 移除影片重點整理。
-- 影片頁上方分類改成重複顯示影片標題。
-- 大標題下方增加官方直播日期與文章發表日期。
-- 前往官方影片改成明顯的實心按鈕。
-- 語言與深淺色控制交換位置，深淺色改成滑動開關。
-- 雙語字幕支援說話者名字、莫蘭迪色標籤與色條。
-- 沒有上傳字幕的影片顯示「字幕整理中」。
-- 新增完整翻譯免責聲明及問題回報入口。
-- 加入 site-config.json，網站名稱、成員、分類、顏色與圖片可由 Admin v2.3 更換。
-- 首頁索引加入影片類型，同時保持舊 videos.json 相容。
+本次修正
+- 首頁大圖改用獨立圖片元素載入，設定圖片失敗時自動恢復 assets/hero.webp。
+- 影片內頁保留重複標題，同時恢復成員、影片類型與來源平台標籤。
+- 免責聲明移到播放器與字幕控制區下方，與播放器同寬並置中。
+- 更新檔案快取版本，避免瀏覽器繼續使用舊程式。
 
 重要
-- scripts/build.mjs 必須一起更新。
-- data/site-config.json 是新的網站設定檔，可以使用 Admin v2.3 匯出後取代。
-- 請勿使用此更新包刪除或覆蓋原本的 data/videos.json。
+- scripts/build.mjs 與 data/site-config.json 仍需保留。
+- 請勿刪除或覆蓋原本的 data/videos.json。
